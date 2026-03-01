@@ -32,18 +32,17 @@
       text-decoration: none;
       font-weight: 600;
     }
+    
     .fleet {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
 }
-
 .car {
-  background: #141421;
-  padding: 24px;
-  border-radius: 16px;
-  border: 1px solid #1f1f2e;
-  transition: 0.3s ease;
+  background: #111;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
 }
 
 .car:hover {
@@ -51,11 +50,24 @@
 }
 
 .car-image {
-  width: 100%;
   height: 220px;
-  border-radius: 14px;
   overflow: hidden;
-  margin-bottom: 16px;
+}
+
+.car-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.car h4 {
+  margin: 16px;
+  font-size: 20px;
+}
+
+.car p {
+  margin: 0 16px 20px;
+  color: #9ca3af;
 }
   </style>
 </head>
@@ -82,7 +94,6 @@
       <div class="car-image">
         <img src="./images/bmw-m4-white.jpeg"
              alt="BMW M4 Convertible"
-             style="width:100%; height:100%; object-fit:cover;">
       </div>
       <h4>BMW M4 Convertible</h4>
       <p>Twin-turbo performance with open-top luxury.</p>
@@ -93,7 +104,6 @@
       <div class="car-image">
         <img src="./images/black-ferrari-f8.JPG"
              alt="Ferrari F8"
-             style="width:100%; height:100%; object-fit:cover;">
       </div>
       <h4>Ferrari F8</h4>
       <p>Precision engineering and unmistakable Italian power.</p>
@@ -104,7 +114,6 @@
       <div class="car-image">
         <img src="./images/grey-maybach-gls.jpeg"
              alt="Maybach GLS"
-             style="width:100%; height:100%; object-fit:cover;">
       </div>
       <h4>Mercedes-Maybach GLS</h4>
       <p>Ultra-luxury SUV with executive comfort and presence.</p>
@@ -115,7 +124,6 @@
       <div class="car-image">
         <img src="./images/porsche-911.JPEG"
              alt="Porsche 911"
-             style="width:100%; height:100%; object-fit:cover;">
       </div>
       <h4>Porsche 911</h4>
       <p>Iconic sports car delivering precision and timeless design.</p>
@@ -126,7 +134,6 @@
       <div class="car-image">
         <img src="./images/black-cullinan.JPG"
              alt="Rolls-Royce Cullinan"
-             style="width:100%; height:100%; object-fit:cover;">
       </div>
       <h4>Rolls-Royce Cullinan</h4>
       <p>Commanding V12 luxury SUV with unmatched prestige.</p>
